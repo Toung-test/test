@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  table {
+    border: 1px solid gray;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  .form-row {
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  .red {
+    color: red;
+    font-size: 24px;
+  }
+</style>
+
+<body>
+  <div class="container">
+
+
+    <iframe style="background: transparent; border: medium; height: 100%; 
+      left: 0px; position: absolute; top: 0px; width: 100%; z-index: -1;">
+    </iframe>
+    <img class="tlw-size-full tlw-object-cover"
+      src="https://cdn4.trplus.com.tw/medias/sys_master/advimage/advimage/h1b/h3d/13441351417886/-.jpg" alt="免費丈量"><a
+      target="_self" rel=""
+      class="flip-card | tlw-absolute tlw-inset-[-1px] tlw-flex tlw-flex-col tlw-justify-center tlw-items-center tlw-gap-1 lg:tlw-gap-3 tlw-bg-pr out-right"
+      href="https://www.trplus.com.tw/community">
+      <h3 class="tlw-font-bold tlw-text-4xl tlw-text-txt-white lg:tlw-text-6xl">免費丈量</h3>
+      <p
+        class="tlw-txt-zh-head-5 tlw-text-txt-800 tlw-line-clamp-2 tlw-max-w-[6em] lg:tlw-line-clamp-1 lg:tlw-max-w-[12em]">
+        到府評估為您解決生活困擾
+      </p>
+    </a>
+
+
+
+    <div>
+      <h2>王小明</h2>
+      <p>嗨，我是一個正在學習 HTML 的新手！</p>
+      <img
+        src="https://media.istockphoto.com/id/1332100919/zh/%E5%90%91%E9%87%8F/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=iO16vfRsbjnhk2sG_Ff-UqonA4ZslG6CvUlFvK3v8mA="
+        alt="">
+    </div>
+    <div>
+      <h3>關於我</h3>
+      <p>我喜歡寫程式，看漫畫，還有玩電腦遊戲。</p>
+    </div>
+    <div>
+      <h3>我的興趣</h3>
+      <ul>
+        <li>學習網頁設計</li>
+        <li>打籃球</li>
+        <li>旅行</li>
+      </ul>
+    </div>
+    <div>
+      <h3>聯絡我</h3>
+      <ul>
+        <li>Email : <a href="mailto:test@example.com">test@example.com</a></li>
+        <li>喜歡的網站： <a href="http://google.com" target="_blank">Google</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>我的作品</h3>
+      <table>
+        <tr>
+          <th>專案名稱</th>
+          <th>簡介</th>
+        </tr>
+        <tr>
+          <td>個人名片網頁</td>
+          <td>用純 HTML 做的第一個作品！</td>
+        </tr>
+        <tr>
+          <td>待完成的專案</td>
+          <td>持續增加中...</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h3>留言給我</h3>
+      <form action="" method="post" id="form">
+        <div class="form-row">
+          <label>姓名：</label>
+          <input type="text">
+        </div>
+        <div class="form-row">
+          <label>留言：</label>
+          <textarea name="" id=""></textarea>
+        </div>
+        <button type="submit">送出</button>
+      </form>
+    </div>
+
+  </div>
+  <script>
+    const pre = document.getElementById("form");
+
+    // pre.addEventListener(("submit"), function (event) {
+    //   event.preventDefault();
+    // });
+
+    pre.addEventListener("submit", event => event.preventDefault());
+
+  </script>
+</body>
+
+</html>

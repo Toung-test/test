@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *,
+  *::before,
+  *::after {
+    outline: 1px solid red;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 30vw;
+    min-height: 50vh;
+    background-color: blue;
+    color: white;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  h1 {
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+  }
+
+  .input {
+    margin-bottom: 10px;
+
+    label {
+      display: inline-block;
+      width: 20%;
+    }
+
+    input {
+      border-radius: 10px;
+      width: 78%;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+
+  .btnSub {
+    background-color: red;
+    border: none;
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h1>登入</h1>
+    <form action="">
+      <div class="input">
+        <label for="account">帳號：</label>
+        <input type="email" name="account" id="account">
+      </div>
+      <div class="input">
+        <label for="pwd">密碼：</label>
+        <input type="password" name="pwd" id="pwd">
+      </div>
+      <button type="submit" class="btnSub">登入</button>
+    </form>
+  </div>
+</body>
+
+</html>

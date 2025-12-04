@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>HTML 練習</h1>
+  <textarea name="" id="">
+我是文字輸入框(可放大)
+  </textarea>
+  <ul>
+    <li><input type="text"></li>
+    <li><input type="checkbox" name="" id=""></li>
+  </ul>
+  <ol>
+    <li>
+      <!-- 檔案的部分，用 type 就好，用 button 跟 label 比較不直觀，但也是能用 -->
+      <input type="button" value="選擇檔案">
+      <label for="">未選擇任何檔案</label>
+    </li>
+    <li>
+      <input type="file" name="" id="">
+    </li>
+    <li>
+      <input type="radio" name="" id="">
+    </li>
+    <li>
+      <input type="file" id="fileInput" style="display:none;">
+      <label for="fileInput" class="file-btn">選擇檔案</label>
+      <span id="fileName">未選擇任何檔案</span>
+    </li>
+  </ol>
+  <button>我是按鈕Button</button>
+
+  <script>
+    const fileInput = document.getElementById("fileInput");
+    const fileName = document.getElementById("fileName");
+
+    fileInput.addEventListener("change", () => {
+      fileName.textContent = fileInput.files.length
+        ? fileInput.files[0].name
+        : "未選擇任何檔案";
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* 空隙可調 */
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .list li {
+    outline: 1px solid red;
+  }
+
+  .list img {
+    width: 100%;
+    display: block;
+  }
+</style>
+
+<body>
+  <ul class="list">
+    <li>
+      <a href="ptrOne.html" target="_blank">練習一</a>
+      <br>
+      <img src="../pic/quesOne.png" alt="練習一">
+    </li>
+    <li>
+      <a href="ptrTwo.html" target="_blank">練習二</a>
+      <br>
+      <img src="../pic/quesTwo.png" alt="練習二">
+    </li>
+    <li>
+      <a href="ptrThree.html" target="_blank">練習三</a>
+      <br>
+      <img src="../pic/quesThree.png" alt="練習三">
+    </li>
+    <li>
+      <a href="ptrFour.html" target="_blank">練習四</a>
+      <br>
+      <img src="../pic/quesFour.png" alt="練習四">
+    </li>
+    <li>
+      <a href="ptrFive.html" target="_blank">練習五</a>
+      <br>
+      <img src="../pic/quesFive.png" alt="練習五">
+    </li>
+  </ul>
+</body>
+
+</html>
